@@ -1,0 +1,148 @@
+body {
+    background-color: #eafaf1;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(11, 126, 93, 0.7); /* transparan */;
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 0 0 ;
+}
+
+.navbar .nav-links a{
+    position: relative;
+    color: rgb(251, 251, 252);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.navbar .nav-links a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: translatex(-50%);
+}
+
+.navbar .nav-links a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: #eafaf1;
+    border-bottom: 2px solid #1abc9c;
+}
+header h1 {
+    margin: 10px 0 5px;
+    color: #1abc9c;
+}
+header p {
+    color: #555;
+}
+
+header img{
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #b1dd94;
+    margin-bottom: 15px;
+}
+
+main{
+    padding: 30px;
+}
+
+h2{
+    color: #1abc9c;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+
+h4{
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #d2ebc2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+thead tr{
+    background: #4e482f;
+    color: #333;
+    text-transform: uppercase;
+}
+
+th, td {
+    background-color: #328b69;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+td img{
+    border-radius: 6px;
+}
+
+tr:hover {
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+
+/*footer*/
+footer {
+    background-color: #719785; /* warna gelap elegan */
+    color: rgb(3, 3, 3); /* teks jadi kontras */
+    text-align: center; /* isi rata tengah */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0; /* pojok atas membulat */
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #20d6b2; /* hijau segar */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #328b69; /* saat hover berubah jadi oranye */
+    text-decoration: underline;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #7f8c8d;
+    margin: 15px 0;
+}

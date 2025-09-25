@@ -1,0 +1,156 @@
+body {
+    background-color: #eafaf1;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(11, 126, 93, 0.7); /* transparan */;
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 0 0 ;
+}
+
+.navbar .nav-links a{
+    position: relative;
+    color: rgb(251, 251, 252);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.navbar .nav-links a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: translatex(-50%);
+}
+
+.navbar .nav-links a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: #eafaf1;
+    border-bottom: 2px solid #1abc9c;
+}
+header h1 {
+    margin: 10px 0 5px;
+    color: #1abc9c;
+}
+header p {
+    color: #555;
+}
+
+header img{
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #b1dd94;
+    margin-bottom: 15px;
+}
+
+form {
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    background: #dde7e5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.form-section h1{
+    margin-bottom: 15px;
+    color: #034432;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.form-box{
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+}
+
+form h2{
+    margin-bottom: 15px;
+    color: #0b7e5d;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+.btn-submit {
+    background: #0b7e5d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover{
+    background: #1abc9c;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #719785; /* warna gelap elegan */
+    color: rgb(3, 3, 3); /* teks jadi kontras */
+    text-align: center; /* isi rata tengah */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0; /* pojok atas membulat */
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #20d6b2; /* hijau segar */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #328b69; /* saat hover berubah jadi oranye */
+    text-decoration: underline;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #7f8c8d;
+    margin: 15px 0;
+}
